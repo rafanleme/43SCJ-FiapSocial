@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 20px;
+}
+
 :root {
     --bgPrimary: #08090B;
     --bgSecondary: #151819;
@@ -24,7 +28,7 @@ body {
 
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
     justify-content: space-between;
 
     box-shadow: 0px 4px 4px var(--accent), 0px 1px 20px var(--accent);
@@ -36,7 +40,39 @@ body {
     gap: 5px;
 }
 
+.post {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 
+    background: var(--bgSecondary);
+
+    padding: 10px;
+}
+
+.post>header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.post>main {
+    margin-top: 10px;
+}
+
+.post>main>p{
+    margin: 10px;
+    padding-left: 30px;
+
+    border-left: 2px solid var(--accent);
+}
+
+.post>main>img{
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    /* width: 100vw; */
+}
 
 /* header {
     background: red !important;
